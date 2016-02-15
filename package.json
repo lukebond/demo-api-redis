@@ -1,0 +1,28 @@
+{
+  "name": "demo-api-redis",
+  "version": "0.0.0",
+  "description": "Contrived demo app for testing Docker Compose",
+  "main": "index.js",
+  "scripts": {
+    "test": "./test/test.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukebond/demo-api"
+  },
+  "keywords": [
+    "demo",
+    "test"
+  ],
+  "author": "Luke Bond <luke.n.bond@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukebond/demo-api/issues"
+  },
+  "homepage": "https://github.com/lukebond/demo-api",
+  "dependencies": {
+    "ip": "^0.3.1",
+    "redis": "^2.4.2",
+    "restify": "^2.8.1"
+  }
+}

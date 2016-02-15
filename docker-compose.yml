@@ -1,0 +1,9 @@
+api:
+  build: .
+  ports:
+    - "9000:9000"
+  links:
+    - "db:redis"
+
+db:
+  image: redis
