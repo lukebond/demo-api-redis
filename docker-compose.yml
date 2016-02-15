@@ -3,7 +3,7 @@ api:
   ports:
     - "9000:9000"
   links:
-    - "db:redis"
+    - "redis"
 
-db:
+redis:
   image: redis
