@@ -1,7 +1,7 @@
 api:
-  build: .
+  image: lukebond/demo-api-redis
   ports:
-    - "9000:9000"
+    - "9000"
   links:
     - "redis"
 
