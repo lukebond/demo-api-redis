@@ -2,7 +2,7 @@ var ip = require('ip');
 var redis = require('redis');
 var restify = require('restify');
 
-var db = redis.createClient({ host: 'redis' });
+var db = redis.createClient({ host: process.env.REDIS_HOST || 'redis' });
 var server = restify.createServer({
   name: 'demo'
 });
