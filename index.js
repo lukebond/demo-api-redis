@@ -14,10 +14,8 @@ server.get('/', function (req, res, next) {
     if (err) {
       return next(err);
     }
-    var s = [
-      message + ' ' + ip.address() + '!',
-      result + ' hits.'
-    ].join(' ');
+    var s = `${message} ${ip.address()}! ${result} hits.\n`;
+    console.log(s);
     res.send(200, s);
     return next();
   });
