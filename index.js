@@ -14,11 +14,14 @@ server.get('/', function (req, res, next) {
     if (err) {
       return next(err);
     }
-    var s = `${message} ${ip.address()}! ${result} hits.\n`;
+    var s = `${message} ${ip.address()}! ${result} hits.`;
     console.log(s);
     res.send(200, s);
     return next();
   });
 });
 
-server.listen(9000);
+const PORT = +(process.env.LISTEN_PORT) || 9000;
+server.listen(PORT, function () {
+  console.log("Listening on port %s", PORT);
+});
