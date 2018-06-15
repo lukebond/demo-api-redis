@@ -4,7 +4,9 @@
   "description": "Contrived demo app for testing Docker Compose",
   "main": "index.js",
   "scripts": {
-    "test": "./test/test.sh"
+    "test": "./test/test.sh",
+    "unit-test": "./test/unit.sh",
+    "functional-test": "./test/functional.sh"
   },
   "repository": {
     "type": "git",
